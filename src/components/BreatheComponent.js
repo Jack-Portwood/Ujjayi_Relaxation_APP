@@ -11,7 +11,7 @@ const BreatheComponent =()=> {
     const holdTime = totalTime / 5;
 
     
-    breathe()
+    
     
 
     function breathe(){ 
@@ -30,6 +30,7 @@ const BreatheComponent =()=> {
     }
 
     setInterval(breathe, totalTime);
+    breathe();
 
     return (
       <fragment>
