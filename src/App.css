@@ -7,6 +7,7 @@ body {
   background: #0b7592 ; 
   color: #fff;
   font-family: 'Montserrat', sans-serif;
+  font-size: larger;
   min-height: 100vh;
   overflow: hidden;
   display: flex;
@@ -114,3 +115,33 @@ body {
     transform: scale(1);
   }
 }
+
+.pulse {
+  height: 360px;
+  width: 360px;
+  border: 0px solid #fff;
+  border-radius: 50%;
+  position: absolute
+  ;
+}
+
+
+@keyframes pulse {
+  0% {
+    border: 0px solid #fff;
+    opacity: 5;
+  }
+  100% {
+    border: 35px solid #fff0;
+    opacity: 0;
+  }
+}
+
+.fade {
+  position: absolute;
+  animation: pulse 3s linear infinite;
+}
+
+
+
+  
