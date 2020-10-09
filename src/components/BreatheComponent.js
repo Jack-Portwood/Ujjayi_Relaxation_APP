@@ -15,11 +15,11 @@ const BreatheComponent =()=> {
     
 
     function breathe(){ 
-        text.innerText = "Inhale!";
+        text.innerText = "Inhale";
         container.className = 'container grow'; 
 
             setTimeout(() => {
-                text.inner = "Hold"
+                text.innerText = "Hold..."
         
 
             setTimeout(() => {
