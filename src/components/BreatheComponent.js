@@ -1,14 +1,43 @@
-import React from 'react';
+import React,{Fragment} from 'react';
 
 
 const BreatheComponent =()=> {
 
-    return (
-      <div>
-        <h1 className="Title">Ujjayi</h1>
+    const container = document.getElementById('container');
+    const text = document.getElementById('text');
+
+    const totalTime = 7500;
+    const inhaleTime = (totalTime / 5) * 2;
+    const holdTime = totalTime / 5;
+
+    
+    breathe()
+    
+
+    function breathe(){ 
+        text.innerText = "Inhale!";
+        container.className = 'container grow'; 
+
+            setTimeout(() => {
+                text.inner = "Hold"
         
-      </div>
+
+            setTimeout(() => {
+                text.innerText = "Exhale";
+                container.className = 'container shrink';
+            }, holdTime);
+            }, inhaleTime);
+    }
+
+    setInterval(breathe, totalTime);
+
+    return (
+      <fragment>
+        
+      </fragment>
     );
+
+    
 
 
 }
