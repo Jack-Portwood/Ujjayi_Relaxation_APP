@@ -30,12 +30,12 @@ const BreatheComponent =()=> {
     }
 
     setInterval(breathe, totalTime);
+    
     breathe();
-
     return (
-      <fragment>
-        
-      </fragment>
+        <Fragment>
+            <h1 className='title'> Take Time Out And Breathe.</h1>
+        </Fragment>
     );
 
     
