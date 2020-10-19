@@ -11,8 +11,6 @@ const BreatheComponent =()=> {
     const holdTime = totalTime / 5;
 
     
-    
-    
 
     function breathe(){ 
         text.innerText = "Inhale";
@@ -33,9 +31,10 @@ const BreatheComponent =()=> {
     
     breathe();
     return (
-        <Fragment>
-            <h1 className='title'> Take Time Out And Breathe.</h1>
-        </Fragment>
+      <Fragment>
+        <h1 className="title"> Take Time Out And Breathe.</h1>
+       
+      </Fragment>
     );
 
     
